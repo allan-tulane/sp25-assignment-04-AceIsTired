@@ -1,7 +1,7 @@
 # CMPS 2200 Assignment 5
 ## Answers
 
-**Name:**_________________________
+**Name:** Jamari Ross
 
 
 
@@ -9,7 +9,7 @@
 
 
 - **1a.**
-
+  The maximum depth is $O(\log_d n)$.
 
 - **1b.**
 
