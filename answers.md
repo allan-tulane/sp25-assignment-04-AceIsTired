@@ -22,7 +22,38 @@
   $O(|E|/|V|)$ gives us the running time we want to achieve.
 
 - **2a.**
+  APSP(i, j, 0):
+    APSP(0,0,0) = 0
+    APSP(0,1,0) = -2
+    APSP(0,2,0) = 2
+    APSP(1,0,0) = ∞
+    APSP(1,1,0) = 0
+    APSP(1,2,0) = 0
+    APSP(2,0,0) = 0
+    APSP(2,1,0) = 0
+    APSP(2,2,0) = 0
 
+  APSP(i, j, 1):
+    APSP(0,0,1) = 0
+    APSP(0,1,1) = -2
+    APSP(0,2,1) = -1
+    APSP(1,0,1) = ∞
+    APSP(1,1,1) = 0
+    APSP(1,2,1) = 1
+    APSP(2,0,1) = ∞
+    APSP(2,1,1) = ∞
+    APSP(2,2,1) = 0
+
+  APSP(i, j, 2):
+    APSP(0,0,2) = 0
+    APSP(0,1,2) = -2
+    APSP(0,2,2) = -1
+    APSP(1,0,2) = ∞
+    APSP(1,1,2) = 0
+    APSP(1,2,2) = 1
+    APSP(2,0,2) = ∞
+    APSP(2,1,2) = ∞
+    APSP(2,2,2) = 0
 
 - **2b.**
   APSP(i,j,2) = min(APSP(i,j,1), APSP(i,2,1) + APSP(2,j,1))
